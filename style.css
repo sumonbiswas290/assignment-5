@@ -1,0 +1,39 @@
+/* Font Packge */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.lexend{
+    font-family: "Lexend", sans-serif;
+}
+
+/* colors book */
+.bgprimary{
+    background-color: #B4F461;
+}
+.bg-offwhite-blr{
+    background-color: rgba(249, 247, 243, 0.95);
+}
+.bg-white-blr{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.bgstone{
+    background-color: rgba(17, 17, 17, 0.05);
+}
+
+
+.fontdark{
+    color: rgb(17, 17, 17);
+}
+.fontlight{
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.borderdark{
+    border-color:rgba(17, 17, 17, 0.3);
+}
+.borderlight{
+    border-color: rgba(17, 17, 17, 0.1);
+}
+
+.modal-btn-hover:hover{
+    background-color: rgba(17, 17, 17, 0.3);
+}
