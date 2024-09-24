@@ -12,7 +12,7 @@
 </head>
 
 <body class="lexend">
-  <header class="sticky top-0 pb-[1px] border-b border-solid borderlight">
+  <header class="fixed top-0 left-0 right-0 pb-[1px] border-b border-solid borderlight">
     <div class="logo pl-4 pt-4 md:hidden flex items-center bg-offwhite-blr">
       <img class="h-12 w-12" src="./assets/logo.png" alt="Logo Image">
       <span class="fontdark text-xl font-semibold pl-4">Donate Bangladesh</span>
@@ -26,58 +26,55 @@
       </div>
       <div id="balance" class="flex items-center">
         <img class="h-5 w-5 mr-3" src="./assets/coin.png" alt="">
-        <span class="font-medium text-xl fontlight">5500.00</span>
+        <span class="font-medium text-xl fontlight">25500</span>
         <span class="font-medium text-xl fontlight ml-2">BDT</span>
       </div>
     </section>
   </header>
-  <main class="px-8 md:px-32">
-    <h1 class="text-5xl font-bold py-12">Important FAQ?</h1>
-    <div class="collapse collapse-arrow bg-base-200 my-4">
+  <main class="px-8 md:px-32 mt-48">
+    <h1 class="text-2xl md:text-5xl font-bold py-4 md:py-12">Important FAQ?</h1>
+    <h3>Choose your question below: </h3>
+    <div class="collapse bg-base-200 my-4 static">
       <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-2xl font-medium">
+      <div class="collapse-title text-lg md:text-2xl font-medium static">
         What is the Document Object Model (DOM)?</div>
       <div class="collapse-content">
-        <p class="text-xl">The Document Object Model (DOM) is a programming interface for web documents. It represents
+        <p class="text-base md:text-xl">The Document Object Model (DOM) is a programming interface for web documents. It represents
           the page so that programs can change the document structure, style, and content. The DOM represents the
           document as nodes and objects; that way, programming languages can interact with the page.</p>
       </div>
     </div>
-    <div class="collapse collapse-arrow bg-base-200 my-4">
+    <div class="collapse bg-base-200 my-4 static">
       <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-2xl font-medium">
-        How do you select an element from the DOM?</div>
-      <div class="collapse-content">
-        <p class="text-xl">JavaScript provides several methods to select DOM elements. Here are some of them: <br>
-          <li>Using getElementById:- let element = document.getElementById("myId");</li>
-          <li>Using getElementsByClassName:- let elements = document.getElementsByClassName("myClass");</li>
-          <li>Using getElementsByTagName:- let elements = document.getElementsByTagName("p");</li>
-          <li>Using querySelector:- let element = document.querySelector(".myClass");</li>
-          <li>Using querySelectorAll:- let elements = document.querySelectorAll(".myClass");</li>
-        </p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 my-4">
-      <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-2xl font-medium">
+      <div class="collapse-title text-lg md:text-2xl font-medium static">
         What is event delegation in the context of the DOM, and why is it useful?</div>
       <div class="collapse-content">
-        <p class="text-xl">Event delegation is based event-bubbling method. It is an event-handling pattern that allows
+        <p class="text-base md:text-xl">Event delegation is based event-bubbling method. It is an event-handling pattern that allows
           you to handle events at a higher level in the DOM tree other than the level where the event was first
           received.</p>
       </div>
     </div>
-    <div class="collapse collapse-arrow bg-base-200 my-4">
+    <div class="collapse bg-base-200 my-4 static">
       <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-2xl font-medium">
+      <div class="collapse-title text-lg md:text-2xl font-medium static">
         How do you manipulate an element's attributes and styles using the DOM?</div>
       <div class="collapse-content">
-        <p class="text-xl">If you want to change other attributes like id , href , or src , you can use the
+        <p class="text-base md:text-xl">If you want to change other attributes like id , href , or src , you can use the
           setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The
           value of the attribute to set.</p>
       </div>
     </div>
+    <div class="collapse bg-base-200 my-4 static">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-lg md:text-2xl font-medium static">
+        How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p class="text-base md:text-xl">To select an element from the DOM in JavaScript, you can use methods like 'getElementById' to retrieve an element by its unique ID, or 'getElementsByClassName' and 'getElementsByTagName' to access multiple elements based on class or tag names. Additionally, 'querySelector' allows you to select the first element that matches a CSS selector, while 'querySelectorAll' retrieves all elements that match a given selector. These methods provide flexibility for accessing and manipulating elements within a web page.</p>
+      </div>
+    </div>
   </main>
+
+  <script src="./utility.js"></script>
 </body>
 
 </html>
